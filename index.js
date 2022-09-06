@@ -11,7 +11,7 @@ app.get('/', (req, res) => res.send(' welcome to cse-h!'))
 app.get('/api/users',(req,res) =>res.json(users)); 
 
 
-app.get('/api/users/:id', (req, res) => { 
+app.get('/api/users/:id', (req, res) => {
     const found = users.some(idFilter(req)); 
    
     if (found) { 
